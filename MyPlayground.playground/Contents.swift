@@ -92,10 +92,10 @@ print("***Break Q3***")
 //print(lineItems)
 
 func commonCharacterCount(s1: String, s2: String) -> Int {
-    
+
     var sameLtr = 0
     var mutatingS2 = s2
-    
+
     for ltr in s1{
         if mutatingS2.contains(ltr){
             let index = mutatingS2.firstIndex(of: ltr)
@@ -103,13 +103,60 @@ func commonCharacterCount(s1: String, s2: String) -> Int {
             sameLtr += 1
         }
     }
-    
+
     return sameLtr
-    
+
 }
 
 commonCharacterCount(s1:"aabcc", s2: "adcaa")
 
 print("***Break Q4***")
+
+
+//5. Ticket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.
+
+
+func getDigits(of number: Int) -> [Int]{
+    var digits = [Int]()
+    var x = number
+    
+    repeat{
+        digits.append(x % 10)
+        x /= 10
+    } while x != 0
+    
+    return digits
+}
+
+extension Array {
+    func split() -> [[Element]] {
+        let ct = self.count
+        let half = ct / 2
+        let leftSplit = self[0 ..< half]
+        let rightSplit = self[half ..< ct]
+        return [Array(leftSplit), Array(rightSplit)]
+    }
+}
+
+
+func isLucky(n: Int) -> Bool {
+
+    let numOfDigits = getDigits(of: n)
+    let halfOfN = numOfDigits.count/2
+    let splitArray = numOfDigits.split()
+    let left = splitArray[0]
+    let right = splitArray[1]
+    
+    if left.reduce(0, +) == right.reduce(0, +){
+        return true
+    }
+    
+    return false
+    
+}
+
+isLucky(n: 1230)
+isLucky(n: 123456)
+
 
 
