@@ -314,11 +314,33 @@ func arrayChange(inputArray: [Int]) -> Int {
             mutableInput[index+1] = sum + mutableInput[index+1]
         }
     }
-   
+    
     return turns
 }
 
 arrayChange(inputArray: [1,1,1])
 
 
-//12. Given a string, find out if its characters can be rearranged to form a palindrome.
+//12. Given a string, find out if its characters can be rearranged to form a palindrome. ( string that doesn't change when reversed )
+
+func palindromeRearranging(inputString: String) -> Bool {
+    
+    var emptyStr: Set<Character> = []
+    print("initial:\(emptyStr)")
+    
+    for ltr in inputString{
+        if emptyStr.contains(ltr){
+            emptyStr.remove(ltr)
+            print("removed:\(emptyStr)")
+            continue
+        }
+        emptyStr.insert(ltr)
+        print("inserted: \(emptyStr)")
+        
+    }
+    
+    return emptyStr.count <= 1
+    
+}
+
+palindromeRearranging(inputString: "abca")
