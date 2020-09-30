@@ -344,3 +344,17 @@ func palindromeRearranging(inputString: String) -> Bool {
 }
 
 palindromeRearranging(inputString: "abca")
+
+//13.  finding the IP address
+// it's a string of four numbers each between 0 and 255 inclusive, with a "." character in between each number. All numbers should be present without leading zeros.
+
+func isIPv4Address(inputString: String) -> Bool {
+    let values = inputString.components(separatedBy: ".").map { Int($0) }
+    
+    // value does not 1. contain nil, 2. (0 to 255) does not(not) contain each input
+    return values.count == 4 && !values.contains { $0 == nil || !(0..<256).contains($0!) }
+}
+
+isIPv4Address(inputString: ".254.255.0")
+
+//14. 
