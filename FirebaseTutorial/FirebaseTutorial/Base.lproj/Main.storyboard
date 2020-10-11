@@ -26,6 +26,7 @@
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
+                                            <action selector="signUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vy-lN-lfY"/>
                                             <segue destination="yy3-nl-qmv" kind="show" id="xLz-hh-Pdl"/>
                                         </connections>
                                     </button>
@@ -33,6 +34,7 @@
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
+                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCf-t1-gK9"/>
                                             <segue destination="cCf-au-Fzq" kind="show" id="IXO-Re-OwD"/>
                                         </connections>
                                     </button>
@@ -67,9 +69,24 @@
                     <view key="view" contentMode="scaleToFill" id="ob5-wE-QF6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xF-z8-MNv">
+                                <rect key="frame" x="143" y="431.5" width="128" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Qlr-la-vKw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1xF-z8-MNv" firstAttribute="centerX" secondItem="ob5-wE-QF6" secondAttribute="centerX" id="0Qv-uZ-dNV"/>
+                            <constraint firstItem="1xF-z8-MNv" firstAttribute="centerY" secondItem="ob5-wE-QF6" secondAttribute="centerY" id="nw8-C4-54s"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="1xF-z8-MNv" id="Kmy-0w-eYo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amA-u2-btN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

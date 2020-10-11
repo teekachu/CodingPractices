@@ -12,6 +12,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBAction func signUpTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func loginTapped(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
