@@ -131,6 +131,7 @@
 		F43126AA2533AA2D00BC7907 = {
 			isa = PBXGroup;
 			children = (
+				F431278A2534ACCF00BC7907 /* Media */,
 				F43126B52533AA2D00BC7907 /* FirebaseTutorial */,
 				F43126CC2533AA2F00BC7907 /* FirebaseTutorialTests */,
 				F43126D72533AA2F00BC7907 /* FirebaseTutorialUITests */,
@@ -203,6 +204,13 @@
 				F43127072533B1CC00BC7907 /* Utilities.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F431278A2534ACCF00BC7907 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
