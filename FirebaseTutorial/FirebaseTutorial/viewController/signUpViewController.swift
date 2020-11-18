@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
-import FirebaseFirestoreSwift
+//import FirebaseFirestoreSwift
 
 class signUpViewController: UIViewController {
     
