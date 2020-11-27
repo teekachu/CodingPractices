@@ -43,7 +43,7 @@ class SelectGenreViewConroller: UITableViewController {
     }
     
     
-    //MARK: Tableview Config
+    //MARK: Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -66,6 +66,7 @@ class SelectGenreViewConroller: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        print("Debug: Selected cell")
+        tableView.deselectRow(at: indexPath, animated: true)
         
         if let cell = tableView.cellForRow(at: indexPath){
             let genre = cell.textLabel?.text ?? SelectGenreViewConroller.genres[0] // set as unknown by default

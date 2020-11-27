@@ -21,6 +21,7 @@
 		F464C4E1256DE51300CE351C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464C4E0256DE51300CE351C /* Extensions.swift */; };
 		F464C4E4256DE70A00CE351C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464C4E3256DE70A00CE351C /* Constant.swift */; };
 		F4F4A7D0256F6079004D1958 /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4A7CF256F6079004D1958 /* Whistle.swift */; };
+		F4F4A7D825701C13004D1958 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4A7D725701C13004D1958 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F464C4E0256DE51300CE351C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F464C4E3256DE70A00CE351C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F4F4A7CF256F6079004D1958 /* Whistle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
+		F4F4A7D725701C13004D1958 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				F464C4C8256DDE9400CE351C /* RootViewController.swift */,
+				F4F4A7D725701C13004D1958 /* ResultsViewController.swift */,
 				F464C4DC256DE3D400CE351C /* RecordWhistleViewController.swift */,
 				F437E4C8256EED860095B276 /* SelectGenreViewConroller.swift */,
 				F437E4CF256EF1EA0095B276 /* AddCommentsViewController.swift */,
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F4A7D825701C13004D1958 /* ResultsViewController.swift in Sources */,
 				F437E4D0256EF1EA0095B276 /* AddCommentsViewController.swift in Sources */,
 				F437E4C9256EED860095B276 /* SelectGenreViewConroller.swift in Sources */,
 				F464C4E1256DE51300CE351C /* Extensions.swift in Sources */,
